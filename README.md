@@ -1,25 +1,59 @@
-![](Penguin.JPG)   
-Virtual Pet
-=============
+void setup(){
+  size(400,400);
+}
+void draw(){
+  background(252,110,0);
+  //head
+  fill(100,135,255);
+  ellipse(200,200,150,138);
+  //the two ears
+  fill(240,187,207);
+  arc(275,80,130,250,3*PI/2,5*PI/2);
+  arc(125,80,130,250,PI/2,3*PI/2);
+  //blue eyes
+  fill(90,198,229);
+  ellipse(160,200,50,95);
+  ellipse(245,200,50,95);
+  //left black
+  fill(2,3,3);
+  translate(163,205);
+  rotate(-.3);
+  ellipse(0,0,40,60);
+  //right black 
+  fill(2,3,3);
+  translate(77,20);
+  rotate(.6);
+  ellipse(0,0,40,60);
+  //left white
+  fill(252,254,255);
+  translate(200,200);
+  rotate(-.6);
+  ellipse(-119,-305,20,25);
+  //right white
+  rotate(.7);
+  ellipse(-229,-181,20,25);
+  //top part of the nose
+  translate(-440,-425);
+  rotate(-.4);
+  fill(26,17,139);
+  arc(68,330,40,50,PI,2*PI);
+  //bottom left part of the nose
+  arc(68,325,45,35,PI/2,PI);
+  //bottom right part of the nose
+  arc(67,325,45,35,0,PI/2);
+  //mouth
+  fill(90,198,229);
+  noStroke();
+  arc(67,360,95,30,0,PI);
+  //line from nose to mouth
+  stroke(2);
+  line(68,343,68,360);
+  //smile
+  arc(68,368,40,8,0,PI);
+  //arcs above nose
+  fill(2,3,3);
+  arc(68,300,30,3,PI,2*PI);
+  arc(68,295,20,3,PI,2*PI);
+}
 
-In this project you will write a program using [Processing](https://processing.org) that displays any animal of your choosing. You can use almost any drawing functions that you would like, you can find the full list at the [Processing Reference](https://processing.org/reference) (See note below).  Your program will need to be divided into at least two functions `void setup()` and `void draw()`. You may find slides of the [apjavaProcessing slide presentation](https://docs.google.com/presentation/d/1sqbareaFmF9fMcp0XOl3hRO6hAlrU5WIaj4V-Kd3eDI/edit?usp=sharing) helpful. 
-
-When you are happy with the appearance of your virtual pet, you will post your finished program on a website. You can get a free [GitHub](https://github.com) account for your website. Instructions on how to put your program on a GitHub website are on slides 73-86 of the [apjavaProcessing slide presentation](https://docs.google.com/presentation/d/1sqbareaFmF9fMcp0XOl3hRO6hAlrU5WIaj4V-Kd3eDI/edit?usp=sharing). Submit the link to your website on google classroom.
-
-In the next assignment we will [use an Arduino to interact with your virtual pet](https://github.com/APCSLowell/LightSensorController#use-an-adafruit-circuit-playground-as-an-input-device-in-a-processing-program). As you work on your design, think about an element of the design that could be changed with a single variable.
-
-Note: The following Processing functions do not work on the web:
-----------------------------------------------------------
-+ `circle()`
-+ `square()`
-+ `clear()`
-+ `delay()`
-+ `System.out.println()`
-+ `System.out.print()`
-+ Using `CHORD` or `PIE` modes with `arc()`
-+ Using an image as an argument in `background()`
-
-Samples of Student Work
------------------------
-None yet! 
 
